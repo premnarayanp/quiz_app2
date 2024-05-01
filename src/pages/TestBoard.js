@@ -47,6 +47,7 @@ function TestBoard(props) {
                 }
             }
         };
+
         const handleBeforeUnload = () => {
             // Set the unloading flag
             sessionStorage.setItem('isUnloading', 'true');
