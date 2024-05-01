@@ -12,10 +12,10 @@ function TestBoard(props) {
     const quizReducer = useSelector((state) => state.quizReducer);
     const { currentQuestion, isFullScreen, quizStatus } = quizReducer;
 
+    //==================Full screen change===============================
     useEffect(() => {
         // Prevent multiple call of screenfull.on(), Otherwise when you restart  quiz again then this screenfull.on() event presented  then  it called  2 or multiple time, so violation count increased  randomly of quiz completed count time time 
-        const handleChange = () => {
-            // Handle fullscreen change here
+        const handleChange = () => {    // Handle fullscreen change here
             if (!screenfull.isFullscreen) {
                 dispatch(setFullScreen(false));
                 dispatch(incrementViolationsCount());
@@ -28,10 +28,43 @@ function TestBoard(props) {
 
         return () => {
             if (screenfull.isEnabled) {
-                screenfull.off('change', handleChange);
-
+                screenfull.off('change', handleChange);    // Clean up the event listener 
             }
         };
+    }, []);
+
+
+
+    //==================Tab change===============================
+    useEffect(() => {
+        const handleVisibilityChange = () => {
+            if (document.visibilityState === 'hidden') {
+                // Check if unloading is true; if not, it's a regular tab switch
+                const isUnloading = sessionStorage.getItem('isUnloading');
+                if (!isUnloading) {
+                    alert("You change the Tab , So increased the  Violations Count");
+                    dispatch(incrementViolationsCount()); // Increment violation count when the tab is hidden
+                }
+            }
+        };
+        const handleBeforeUnload = () => {
+            // Set the unloading flag
+            sessionStorage.setItem('isUnloading', 'true');
+        };
+
+        window.addEventListener('beforeunload', handleBeforeUnload);
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+
+        return () => {
+            window.removeEventListener('beforeunload', handleBeforeUnload);
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
+        };
+    }, []);
+
+
+    // Cleanup the isUnloading flag on mount
+    useEffect(() => {
+        sessionStorage.removeItem('isUnloading');
     }, []);
 
 
