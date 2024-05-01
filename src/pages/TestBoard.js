@@ -18,7 +18,7 @@ function TestBoard(props) {
         const handleChange = () => {    // Handle fullscreen change here
             if (!screenfull.isFullscreen) {
                 dispatch(setFullScreen(false));
-                dispatch(incrementViolationsCount());
+                //dispatch(incrementViolationsCount());
             }
         };
 
