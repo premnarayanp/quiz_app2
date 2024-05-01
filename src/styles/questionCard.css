@@ -1,0 +1,93 @@
+.QuestionCard {
+    background-color: aliceblue;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.questionContainer {
+    /* background-color: rgb(180, 235, 159); */
+    background-color: rgb(219, 252, 200);
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: solid 1px gray;
+}
+
+.questionContainer span {
+    font-size: 22px;
+    font-weight: 900;
+    color: black;
+}
+
+.questionContainer p {
+    font-size: 19px;
+    font-weight: 800;
+    color: grey;
+}
+
+
+/* ------------------Option Container------------------------- */
+
+.optionContainer .optionTitle {
+    font-size: 22px;
+    font-weight: 900;
+    color: red;
+    margin-bottom: 0;
+}
+
+.optionList {
+    /* background-color: aliceblue; */
+    /* padding: 5px; */
+    padding: 10px 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.optionList li {
+    border: solid 1px gray;
+    border-radius: 8px;
+    padding: 10px 5px;
+    width: 100%;
+    position: relative;
+    /* background-color: rgb(220, 238, 177); */
+    background-color: white;
+    margin-top: 10px;
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.19); */
+}
+
+
+/* input[type=radio].selectOptions {
+    accent-color: red;
+    background-color: red;
+} */
+
+
+/* .input[disabled] {
+    background-color: red;
+    accent-color: red;
+    border: 0px solid red;
+} */
+
+.optionText {
+    font-size: 16px;
+    font-weight: 600;
+    color: gray;
+}
+
+
+/* ===========================Wrong Right Indicator========================= */
+
+.wrongRightIcon {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.wrongRightIcon img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}

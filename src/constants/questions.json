@@ -1,0 +1,12 @@
+[
+    { "question": "What is the capital of France?", "options": ["Paris", "London", "Rome", "Berlin"], "answer": "Paris", "correctOptionIndex": 0 },
+    { "question": "What is 2 + 2?", "options": ["3", "4", "5", "6"], "answer": "4", "correctOptionIndex": 1 },
+    { "question": "Which planet is known as the Red Planet?", "options": ["Earth", "Mars", "Jupiter", "Venus"], "answer": "Mars", "correctOptionIndex": 1 },
+    { "question": "What year did the Titanic sink?", "options": ["1912", "1915", "1918", "1923"], "answer": "1912", "correctOptionIndex": 0 },
+    { "question": "Who wrote 'Hamlet'?", "options": ["Shakespeare", "Dickens", "Austen", "Orwell"], "answer": "Shakespeare", "correctOptionIndex": 0 },
+    { "question": "What is the boiling point of water?", "options": ["100°C", "90°C", "120°C", "80°C"], "answer": "100°C", "correctOptionIndex": 0 },
+    { "question": "What is the chemical symbol for gold?", "options": ["Au", "Ag", "Pb", "Fe"], "answer": "Au", "correctOptionIndex": 0 },
+    { "question": "Which element has the atomic number 1?", "options": ["Oxygen", "Hydrogen", "Helium", "Carbon"], "answer": "Hydrogen", "correctOptionIndex": 1 },
+    { "question": "Who painted the Mona Lisa?", "options": ["Da Vinci", "Van Gogh", "Picasso", "Rembrandt"], "answer": "Da Vinci", "correctOptionIndex": 1 },
+    { "question": "What is the largest planet in our Solar System?", "options": ["Earth", "Jupiter", "Saturn", "Neptune"], "answer": "Jupiter", "correctOptionIndex": 1 }
+]

@@ -1,0 +1,104 @@
+.Home {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 90%;
+    width: 100%;
+    /* background-color: rgb(213, 213, 216); */
+    padding: 30px;
+    padding-top: 0;
+    position: relative;
+}
+
+.blurBackground {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: gray;
+    /* background-color: rgb(126, 126, 150); */
+    z-index: 1;
+}
+
+.taskBoard {
+    border: solid 3px white;
+    border-radius: 15px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.filter_sort_container {
+    height: 20%;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.addTaskBtn {
+    padding: 5px 15px;
+    background-color: blue;
+    color: white;
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.task_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 80%;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+
+/* ------------------Quiz Table---------------------- */
+
+.quiz_info_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.quiz_info_table thead {
+    background-color: rgb(234, 197, 143);
+}
+
+.quiz_info_table thead th {
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    color: white;
+}
+
+.quiz_info_table tbody td {
+    text-align: start;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.quiz_info_table tbody button,
+a {
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    border-radius: 7px;
+    margin-left: 20px;
+    font-size: 15px;
+    outline: none;
+    border: solid 1px gray;
+}
+
+
+/* div{
+    background-color: rgb(198, 247, 198);
+} */

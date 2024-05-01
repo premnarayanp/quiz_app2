@@ -1,0 +1,60 @@
+.nav {
+    background-color: rgb(174, 180, 158);
+    height: 10%;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.rounded-img-container {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.rounded-img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.nav button {
+    /* background: rgb(222, 180, 180); */
+    color: black;
+    outline: none;
+    border: 0;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: inherit;
+    border: solid 1px gray;
+    border-radius: 6px;
+    background-color: rgb(230, 236, 217);
+}
+
+.profileButton {
+    background-color: white;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+
+/* .menuButton {
+    background-color: rgb(226, 147, 147);
+    color: white;
+    background-color: white;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+} */
